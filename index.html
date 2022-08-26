@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rode Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens:{
+              lg:"1200px",
+              tablet:"990px",
+              tablet2:"768px",
+              mobile:"300px",
+            },
+            extend: {
+              colors: {
+                button:"#AC9870",
+                text:"#8C8C89",
+              
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+     <nav class="flex h-[50px] tablet:h-auto bg-white justify-between lg:flex flex-row lg:flex-col sticky top-0 z-10">
+      <section class="flex text-[20px] lg:text-[16px] grow lg:grow-0 flex-row justify-start lg:justify-around">
+        <div class="burger relative top-[3%] lg:hidden">
+          <div class="line1 w-[33px] bg-[#000000] h-[4px] m-[3px]"></div>
+          <div class="line2 w-[33px] bg-[#000000] h-[4px] m-[3px]"></div>
+          <div class="line3 w-[33px] bg-[#000000] h-[4px] m-[3px]"></div>
+        </div>
+
+       <div class="flex self-start lg:justify-start"><img src="./assets/location.svg" alt="location"><span>EN</span></div>
+       <div></div>
+       <div class="hidden lg:block"><img src="./assets/username-icon.svg" alt="User"></div>
+      </section>
+      <hr class="hidden lg:block w-full">
+      <section class="flex grow-[2] lg:grow-0 justify-between tablet:justify-around lg:justify-evenly items-center h-[100px] ">
+        <div class="self-start lg:self-center">
+            <img src="./assets/logo.svg" alt="Rode Logo" width="100px">
+        </div>
+        <ul class="hidden lg:flex gap-[50px] uppercase items-center">
+            <li>Products</li>
+            <li>User Guides</li>
+            <li>Solutions</li>
+            <li>Apparel</li>
+            <li>Support</li>
+        </ul>
+    <div  class="self-start lg:self-center">
+        <img src="./assets/search.svg" alt="search svgs" width="30px">
+    </section>
+  </div>
+     </nav> 
+
+     <!-- HERO SECTION -->
+    <section class="w-[100vw]">
+
+      <!-- 2 images for different sizes -->
+      <div class=" hidden w-[100%] flex justify-end tablet:block relative ">
+        <img src="./assets/main-banner.jpeg" alt="main-banner">
+      </div>
+      <div class=" block tablet:hidden ">
+        <img class="w-[100%]" src="./assets/rode-rodecaster-pro-II-home-page-800x700-rgb.jpg" alt="">
+      </div>
+
+      <!-- Heading Part -->
+       <div class=" bg-black tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] absolute top-90%  tablet:top-[35%] tablet:right-[0%]">
+        <img class="w-full tablet:w-[60%] m-[0_auto]" src="./assets/RODECasterProII_PL_PI_01.svg" alt="">
+          <p class="text-center font-bold tablet:font-light text-white text-[24px] mt-[8px]">The Revolution Is Here</p>
+          <p class="text-center text-[#808B88] text-[16px] mt-[16px]">The RØDECaster Pro II is the world's most powerful all-in-one <br> audio solution for streamers, podcasters, musicians, and creators. <br> Take your content to the next level.</p>
+          <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+        </div>
+ </section>
+
+     <!-- section IInd -->
+     <section class="w-full static tablet:relative pt-[300px] tablet:pt-[0px]">
+          <img class= " hidden tablet:block" src="./assets/banner-second.jpeg" alt="banner-second">
+          <div class=" bg-white tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] static  tablet:absolute tablet:top-[35%] ">
+            <img class="w-full tablet:w-[60%] m-[0_auto]" src="./assets/NTH-100_PL_P_RGB_01.svg" alt="">
+              <p class="text-center font-semibold tablet:font-light text-black text-[24px] mt-[8px]">Your Search For The Perfect Headphones Is <br> Over</p>
+              <p class="text-center text-[#808B88] text-[16px] mt-[16px]">Experience sound like never before with the NTH-100s. <br> Exceptional sonic performance, superior comfort and iconic looks <br> that inspires creativity.</p>
+              <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+            </div>
+          <img class="block w-full tablet:hidden" src="assets\rode-nt-usb-webheader-v7-800x700-rgb.jpg" alt="second image">
+         
+     </section>
+
+     <!-- section 3 -->
+     <section class="w-[100vw] tablet:relative pt-[30px] tablet:pt-[0px]">
+
+        <img class="hidden w-[100%] tablet:block" src="./assets/banner-three.jpeg" alt="main-banner">
+      
+      <div class=" bg-white tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] static  tablet:absolute tablet:top-[35%] tablet:right-[0%] ">
+        <img class=" w-full tablet:w-[60%] m-[0_auto]" src="./assets/NT-USB_PL_P_01.svg" alt="">
+          <p class="text-center font-bold tablet:font-light text-black text-[24px] mt-[8px]">Studio-Quality Recording, Made Simple</p>
+          <p class="text-center text-[#808B88] text-[16px] mt-[16px]">The NT-USB is a studio-quality USB condenser microphone that <br> offers impeccable audio, elegant looks and premium features, all in <br> an easy-to-use form factor, the NT-USB will have you sounding like <br> a pro in seconds.</p>
+          <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+        </div>
+        <img class="w-[100%] block tablet:hidden " src="./assets/rode-podmic-webheader-800x700-rgb-(2).jpg" alt="">
+ </section>
+
+ <!-- section 4 -->
+   <section class="w-full static tablet:relative pt-[0px] tablet:pt-[0px]">
+    <img class="hidden w-[100%] tablet:block" src="./assets/banner-four.jpeg" alt="banner-four">
+    <div class=" bg-white tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] static  tablet:absolute tablet:top-[35%] ">
+      <img class="w-full tablet:w-[60%] m-[0_auto]" src="assets\PodMic_PL_P_01_web-top-padding-01.svg" alt="">
+        <p class="text-center font-semibold tablet:font-light text-black tablet:text-white text-[24px] mt-[8px]">Broadcast-grade Dynamic Microphone</p>
+        <p class="text-center text-[#00000080] tablet:text-[#ffffff80] text-[16px] mt-[16px]">Give your voice that rich, broadcast sound with the PodMic. <br> Perfect for livestreaming, voice-over, podcasting and gameplay.</p>
+        <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+      </div>
+    <img class="block w-full tablet:hidden" src="assets\rode-wigo2-web-header-800x700.jpg" alt="second image">
+   
+</section>
+
+<!-- section 5 -->
+<section class="w-[100vw] tablet:relative">
+
+  <img class="hidden w-[100%] tablet:block" src="assets\banner-five.jpeg" alt="banner-five">
+
+<div class=" bg-white tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] static  tablet:absolute tablet:top-[35%] tablet:right-[0%] ">
+  <img class=" hidden tablet:block w-full tablet:w-[60%] m-[0_auto]" src="assets\WIGO_II_PL_PI_01.svg" alt="">
+  <img class=" block tablet:hidden w-full tablet:w-[60%] m-[0_auto]" src="assets\WIGO_II_PL_P_01_web-top-padding-01.svg" alt="">
+    <p class="text-center font-bold tablet:font-light text-black tablet:text-white text-[24px] mt-[8px]">Next Generation Wireless Audio</p>
+    <p class="text-center text-[#808B88] text-[16px] mt-[16px]">The Wireless GO II is the world’s most powerful and versatile <br> wireless microphone. With an unparalleled feature set and ultra- <br> compact form factor, this is next generation wireless audio for every creator.</p>
+    <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+  </div>
+  <img class="w-[100%] block tablet:hidden " src="assets\rode-nt-usb-mini-webheader-800x700-rgb.jpg" alt="">
+</section>
+
+<!-- section 6 -->
+<section class="w-full static tablet:relative ">
+  <img class= " hidden tablet:block" src="./assets/banner-six.jpeg" alt="banner-six">
+  <div class=" bg-white tablet:bg-transparent pb-[20px] tablet:pb-[0px] w-[100%] tablet:w-[50%] static  tablet:absolute tablet:top-[35%] ">
+    <img class=" hidden tablet:block w-full tablet:w-[60%] m-[0_auto]" src="assets/NT-USB_Mini_PL_PI_01.svg" alt="">
+    <img class=" block tablet:hidden w-full tablet:w-[60%] m-[0_auto]" src="assets/NT-USB_Mini_PL_P_01_web-top-padding-01.svg" alt="">
+      <p class="text-center font-semibold tablet:font-light text-black text-[24px] mt-[8px]">Compact Sound, Incredibly Powerful</p>
+      <p class="text-center tablet:text-[#ffffff80] text-[16px] mt-[16px]">The NT-USB Mini brings pristine studio sound to a compact USB <br>  microphone, and with RØDE Connect unlocking more power, more <br> features and more control, it’s the perfect recording solution for <br> podcasters, gamers and streamers.</p>
+      <div class="text-center mt-[16px]"><a class="text-[#AD9966] font-bold mr-[10px]" href="#">Learn More ></a><button class="bg-[#ad9970] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Buy Now</button> </div>
+    </div>
+</section>
+
+<!-- section 7 -->
+  <div class="pt-[50px] pb-[50px] text-[#00000080] text-center">
+    <h1 class="text-[32px] font-bold">Explore The RØDE Range</h1>
+  </div>
+
+  <section class="w-[100%]"> 
+        <div class="w-[80%] m-[0_auto] relative">
+           <img class="" src="./assets/banner-seven.png" alt="">
+           <img class="absolute text-white left-[0%] top-[50%]" src="./assets/Microphones.svg">
+        </div>
+        <div class="w-[80%] m-[0_auto] pt-[50px] relative">
+          <img class="" src="./assets/banner-eight.jpg" alt="">
+          <img class="absolute text-white left-[0%] top-[50%]" src="./assets/banner-eight-sub.svg">
+       </div>
+       <div class="w-[80%] m-[0_auto] pt-[50px] relative">
+        <img class="" src="./assets/banner-nine.png" alt="">
+        <img class="absolute text-white left-[0%] top-[50%]" src="./assets/banner-nine-sub.svg">
+     </div>
+     <div class="w-[80%] m-[0_auto] pt-[50px] relative">
+      <img class="" src="./assets/banner-tenth.png" alt="">
+      <img class="absolute text-white left-[0%] top-[50%]" src="./assets/banner-tenth-sub.svg">
+   </div>
+  </section>
+
+  <div class="pt-[50px] pb-[50px] text-[#ad9970] text-center">
+    <h1 class="text-[32px] font-bold">Latest From The RØDE Blog</h1>
+  </div>
+
+  <section class="bg-[#F8F9FA] w-[100%]">
+        <div class=" w-[100%] tablet2:w-[80%] m-[0_auto] flex flex-col tablet2:flex-row ">
+          <div class=" w-[100%] tablet2:w-[50%] bg-white mr-[30px] mt-[70px]"> 
+            <div class="w-full text-center">
+            <p class="text-[30px]">The Difference Between Large-Diaphragm <br> and Small-Diaphragm Condenser <br> Microphones </p>
+            <img class="width:[100%] m-[0_auto] " src="./assets/thumbnail6.jpeg" alt="">
+            <p class="mt-[16px] text-[rgb(31,45,61)]">We explore the difference between large- and small-diaphragm <br> condenser microphones, and what each is best used for.</p>
+            <button class="bg-[#ad9970] mt-[16px] mb-[30px] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Learn More</button> 
+          </div>
+          </div>
+
+          <div class="w-[100%] tablet2:w-[50%] pt-[70px]">
+            <div class="w-full bg-white text-center">
+            <p class="text-[30px]">What is a Condenser Microphone and <br> When to Use One </p>
+           <img class="width:[100%] m-[0_auto] mt-[40px]" src="./assets/thumbnail.jpg" alt="">
+           <p class="mt-[16px] text-[rgb(31,45,61)]">We explore the difference between large- and small-diaphragm <br> condenser microphones, and what each is best used for.</p>
+           <button class="bg-[#ad9970] mt-[16px] mb-[30px] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Learn More</button> 
+          </div>
+          </div>
+        </div>
+  </section>
+  <section class="bg-[#F8F9FA] w-[100%]">
+    <div class="w-[100%] tablet2:w-[80%] m-[0_auto] flex  flex-col tablet2:flex-row ">
+      <div class="w-[100%] tablet2:w-[50%] bg-white mr-[30px] mt-[70px]"> 
+        <div class="w-full text-center">
+        <p class="text-[30px]">The Difference Between Large-Diaphragm <br> and Small-Diaphragm Condenser <br> Microphones </p>
+        <img class="width:[100%] m-[0_auto] " src="assets\rode-rodecaster-pro-II-on-black-front-580x509.jpg" alt="">
+        <p class="mt-[16px] text-[rgb(31,45,61)]">We explore the difference between large- and small-diaphragm <br> condenser microphones, and what each is best used for.</p>
+        <button class="bg-[#ad9970] mt-[16px] mb-[30px] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Learn More</button> 
+      </div>
+      </div>
+
+      <div class="w-[100%] tablet2:w-[50%] pt-[70px]">
+        <div class="w-full bg-white text-center">
+        <p class="text-[30px]">What is a Condenser Microphone and <br> When to Use One </p>
+       <img class="width:[100%] m-[0_auto] mt-[40px]" src="./assets/rode-rodecaster-pro-II-on-black-front-on-580x509-rgb.jpeg" alt="">
+       <p class="mt-[16px] text-[rgb(31,45,61)]">We explore the difference between large- and small-diaphragm <br> condenser microphones, and what each is best used for.</p>
+       <button class="bg-[#ad9970] mt-[16px] mb-[30px] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Learn More</button> 
+      </div>
+      </div>
+    </div>
+</section>
+
+<footer class="bg-white mt-[100px]">
+   <hr class=" pt-[150px]">
+   <div class="w-[100%]">
+     <div class="w-[100%] lg:w-[70%] m-[0_auto] flex flex-col lg:flex-row">
+          <div class="w-full lg:w-[30%] mt-[0px] lg:mt-[-70px]">
+             <img src="./assets/RODE_logo_142x85_desktop_light_mode.svg" alt="">
+          </div>
+          <div class="w-full lg:w-[30%] mt-[0px] lg:mt-[-70px] text-[#484848] flex gap-[70px] ">
+              <ul class="text-[18px]">
+                 <li class="font-bold mb-[5px]">Products</li>
+                 <li class="mb-[5px]">Microphones</li>
+                 <li class="mb-[5px]">Headphones</li>
+                 <li class="mb-[5px]">Interfaces and Mixers</li>
+                 <li class="mb-[5px]">Accessories</li>
+                 <li class="mb-[5px]">Software</li>
+                 <li class="mb-[5px]">Apparel</li>
+              </ul>
+              <ul class="text-[18px]">
+                <li class="font-bold mb-[5px]">Support</li>
+                <li class="mb-[5px]">Contact RØDE</li>
+                <li class="mb-[5px]">Service Centre</li>
+                <li class="mb-[5px]">Warranty</li>
+                <li class="mb-[5px]">Where to Buy</li>
+             </ul>
+             <ul class="text-[18px] ">
+              <li class="font-bold mb-[5px]">Company</li>
+              <li class="mb-[5px]">About RØDE</li>
+              <li class="mb-[5px]">News and Info</li>
+              <li class="mb-[5px]">Job Opportunities</li>
+              <li class="font-bold mb-[5px]">Account</li>
+              <li class="mb-[5px]">Manage your Account</li>
+              <li class="mb-[5px]">Create Account</li>
+           </ul>
+          </div>
+          <div class="w-[30%] ml-[20%] mt-[0px] lg:mt-[-70px] text-right">
+               <p class="text-[24px] font-semibold">Subscribe to our latest <br> news and offers</p>
+               <button class="bg-[#ad9970] mt-[16px] mb-[30px] text-white font-bold px-[16px] py-[6px] rounded-[100px]">Sign Up</button> 
+          </div>
+     </div>
+     <hr class="w-[70%] m-[0_auto]">
+   </div>
+   <div class="w-[100%] mb-[70px] mt-[30px]">
+       <div class="w-[100%] lg:w-[70%] m-[0_auto] text-[14px] flex flex-col justify-center gap-[20px] lg:gap-0 lg:flex-row  lg:justify-between ">
+          <div class="w-full lg:w-[30%]">
+            © 2022 RØDE All Rights Reserved.
+          </div>
+          <div class="w-full lg:w-[30%]">
+            Privacy Policy | Terms & Conditions
+          </div>
+          <div class="w-full lg:w-[30%]">
+            <div class="flex gap-[20px] w-[10%] ">
+               <img src="./assets/facebook-brands.svg" alt="">
+               <img src="./assets/twitter-brands.svg" alt="">
+               <img src="./assets/instagram-brands.svg" alt="">
+               <img src="./assets/youtube-brands.svg" alt="">
+               <img src="./assets/tiktok-brands.svg" alt="">
+            </div>
+          </div>
+       </div>
+   </div>
+
+</footer>
+</body>
+</html>
